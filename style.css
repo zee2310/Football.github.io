@@ -375,3 +375,20 @@ footer ul li {
         }
     }
     /*----------------------------- media query for ycfl end here----------------------------*/
+
+
+
+/*----------------------------- media query for FOOTER here----------------------------*/
+
+@media screen and (max-width: 600px) {
+    footer p,
+    h3 {
+        margin-left: 50px;
+    }
+    footer ul {
+        margin-left: 50px;
+    }
+}
+
+
+/*----------------------------- media query for Footer here----------------------------*/

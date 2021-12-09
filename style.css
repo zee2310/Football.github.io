@@ -178,7 +178,7 @@ h1 {
 
 .zi-teams {
     padding: 30px;
-    background-color: #24252a;
+     background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
     text-align: center;
 }
 
@@ -317,14 +317,14 @@ h1 {
     @media screen and (max-width: 600px) {
         .zi-teams {
             padding: 30px;
-            background-color: #24252a;
+            background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
             text-align: center;
         }
         .zi-teams h2,
         h1 {
             font-family: zillaslab;
             margin-bottom: 30px;
-            color: #f2f2f2;
+            color: #24252a;
         }
         .zi-teams .row .teams {
             margin-top: 50px;

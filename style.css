@@ -88,55 +88,58 @@ header {
 
 /*----------------------------- slogan end here----------------------------*/
 
-.slogan .col-2 {
-    flex-basis: 50%;
-    min-width: 500px;
-    color: #f2f2f2;
-    text-align: center;
-    justify-items: center;
-    justify-items: center;
-}
-
-.col-2 img {
-    max-width: 100%;
-    padding: 50px 0;
-}
-
 
 /*----------------------------- slogan end here----------------------------*/
 
 
 /*----------------------------- league class start here----------------------------*/
 
-.league {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    color: black;
-    background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
-}
-
-.league .col-2 h3 {
-    color: black;
-}
-
-.league .col-2 h4 {
-    color: black;
-}
-
-.league .col-2 .ycfl-img {
-    width: 230px;
-    max-width: 100%;
-    padding: 50px 0;
-}
-
-.btn-league {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 50px;
-    color: #f2f2f2;
-    background-color: #24252a;
-}
+    .league {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        color: black;
+        width: 100%;
+        background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
+    }
+    
+    .slogan {
+        flex-basis: 50%;
+        min-width: 300px;
+        margin-left: 0px;
+        color: #f2f2f2;
+        text-align: center;
+    }
+    
+    .league .slogan h3 {
+        color: black;
+    }
+    
+    .league .slogan h4 {
+        color: black;
+    }
+    
+    .league .slogan .ycfl-img {
+        margin-left: 170px;
+        width: 230px;
+        margin-bottom: 30px;
+    }
+    
+    .league .slogan .ycfl-img img {
+        width: 100%;
+    }
+    
+    .league .slogan .zi-img {
+        margin-bottom: 30px;
+    }
+    
+    .btn-league {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 50px;
+        color: #f2f2f2;
+        background-color: #24252a;
+    }
 
 
 /*----------------------------- League class end here----------------------------*/

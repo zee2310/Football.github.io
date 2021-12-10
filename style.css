@@ -52,7 +52,48 @@ body {
 /*----------------------------- Row and col for header section start here----------------------------*/
 
 header {
-    background-color: #24252a;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(germany-munich-germany-munich-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-box {
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+
+.text-box p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-box h1 {
+    font-size: 90px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3 {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .row {
@@ -94,52 +135,41 @@ header {
 
 /*----------------------------- league class start here----------------------------*/
 
-    .league {
-        padding-top: 80px;
-        padding-bottom: 80px;
-        color: black;
-        width: 100%;
-        background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
-    }
-    
-    .slogan {
-        flex-basis: 50%;
-        min-width: 300px;
-        margin-left: 0px;
-        color: #f2f2f2;
-        text-align: center;
-    }
-    
-    .league .slogan h3 {
-        color: black;
-    }
-    
-    .league .slogan h4 {
-        color: black;
-    }
-    
-    .league .slogan .ycfl-img {
-        margin-left: 170px;
-        width: 230px;
-        margin-bottom: 30px;
-    }
-    
-    .league .slogan .ycfl-img img {
-        width: 100%;
-    }
-    
-    .league .slogan .zi-img {
-        margin-bottom: 30px;
-    }
-    
-    .btn-league {
-        margin-top: 20px;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 50px;
-        color: #f2f2f2;
-        background-color: #24252a;
-    }
+.league {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: black;
+    background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
+}
+
+.league .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    color: #f2f2f2;
+}
+
+.league .col-2 h3,
+h4 {
+    color: #24252a;
+}
+
+.league .col-2 .ycfl-img {
+    width: 300px;
+    padding: 50px 0px;
+}
+
+.league .col-2 .ycfl-img img {
+    width: 100%;
+}
+
+.btn-league {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: #f2f2f2;
+    background-color: #24252a;
+}
 
 
 /*----------------------------- League class end here----------------------------*/
@@ -172,13 +202,11 @@ h1 {
 /*----------------------------- teams class end here----------------------------*/
 
 
-
-
 /*-----------------------------teams class start here----------------------------*/
 
 .zi-teams {
     padding: 30px;
-     background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
+    background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
     text-align: center;
 }
 
@@ -201,8 +229,8 @@ h1 {
 /*----------------------------- teams class end here----------------------------*/
 
 
-    /*----------------------------- Footer start here----------------------------*/
-    
+/*----------------------------- Footer start here----------------------------*/
+
 footer {
     padding-top: 50px;
     background-color: #24252a;
@@ -216,13 +244,14 @@ footer h3 {
 }
 
 footer p {
-     font-family: montserrat;
+    font-family: montserrat;
     margin-top: 30px;
     text-align: center;
     color: #f2f2f2;
 }
 
 footer ul li {
+    list-style: none;
     padding: 8px;
     align-items: center;
     margin: 30px;
@@ -234,11 +263,7 @@ footer ul li {
 }
 
 
-
 /*----------------------------- Footer end here--------------------------*/
-
-
-
 
 
 /*----------------------------- Media query for top nav start here----------------------------*/
@@ -287,17 +312,17 @@ footer ul li {
 
 @media screen and (max-width: 600px) {
     .col-2 {
-            flex-basis: 50%;
-            min-width: 300px;
-        }
-        .col-2 h3 {
-            margin-left: 30px;
-        }
-        .col-2 img {
-            max-width: 100%;
-            margin-left: 30px;
-            padding: 50px 20px;
-        }
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+    .col-2 h3 {
+        margin-left: 30px;
+    }
+    .col-2 img {
+        max-width: 100%;
+        margin-left: 30px;
+        padding: 50px 20px;
+    }
 }
 
 
@@ -307,19 +332,19 @@ footer ul li {
 /*----------------------------- media query for slogan end here----------------------------*/
 
 @media screen and (max-width: 600px) {
-      .league .slogan {
-            margin-left: 50px;
-            text-align: center;
-            justify-content: space-around;
-        }
-        .league .slogan .ycfl-img {
-            margin-left: 30px;
-            width: 230px;
-            margin-bottom: 30px;
-        }
-     .league .slogan .ycfl-img img {
-            width: 100%;
-        }
+    .league .slogan {
+        margin-left: 50px;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .league .slogan .ycfl-img {
+        margin-left: 30px;
+        width: 230px;
+        margin-bottom: 30px;
+    }
+    .league .slogan .ycfl-img img {
+        width: 100%;
+    }
 }
 
 
@@ -354,29 +379,30 @@ footer ul li {
 
 
 /*----------------------------- media query for ycfl start here----------------------------*/
-    
-    @media screen and (max-width: 600px) {
-        .zi-teams {
-            padding: 30px;
-            background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
-            text-align: center;
-        }
-        .zi-teams h2,
-        h1 {
-            font-family: zillaslab;
-            margin-bottom: 30px;
-            color: #24252a;
-        }
-        .zi-teams .row .teams {
-            margin-top: 50px;
-            margin-bottom: 50px;
-            margin-right: 15px;
-            margin-left: 15px;
-            display: inline-block;
-        }
-    }
-    /*----------------------------- media query for ycfl end here----------------------------*/
 
+@media screen and (max-width: 600px) {
+    .zi-teams {
+        padding: 30px;
+        background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
+        text-align: center;
+    }
+    .zi-teams h2,
+    h1 {
+        font-family: zillaslab;
+        margin-bottom: 30px;
+        color: #24252a;
+    }
+    .zi-teams .row .teams {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 15px;
+        margin-left: 15px;
+        display: inline-block;
+    }
+}
+
+
+/*----------------------------- media query for ycfl end here----------------------------*/
 
 
 /*----------------------------- media query for FOOTER here----------------------------*/

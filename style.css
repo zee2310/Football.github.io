@@ -74,7 +74,8 @@ header {
 }
 
 .text-box h1 {
-    font-size: 90px;
+    font-family: Lobster;
+    font-size: 50px;
     line-height: 160px;
     margin-left: -10px;
     color: transparent;
@@ -93,7 +94,7 @@ header {
 
 .text-box h3 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .row {
@@ -155,7 +156,7 @@ h4 {
 
 .league .col-2 .ycfl-img {
     width: 300px;
-    padding: 50px 0px;
+    padding: 30px 0px;
 }
 
 .league .col-2 .ycfl-img img {
@@ -169,6 +170,10 @@ h4 {
     border-radius: 50px;
     color: #f2f2f2;
     background-color: #24252a;
+}
+
+.btn-league:hover {
+    background-color: violet;
 }
 
 
@@ -314,14 +319,19 @@ footer ul li {
     .col-2 {
         flex-basis: 50%;
         min-width: 300px;
-    }
-    .col-2 h3 {
         margin-left: 30px;
+        position: relative;
+        text-align: center;
+    }
+    .col-2 h3,
+    h4,
+    button {
+        margin-left: 50px;
     }
     .col-2 img {
         max-width: 100%;
         margin-left: 30px;
-        padding: 50px 20px;
+        padding: 50px 0px;
     }
 }
 

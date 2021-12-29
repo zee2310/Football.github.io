@@ -295,6 +295,15 @@ h1 {
 
 /*-----------------------------teams class start here----------------------------*/
 
+.zi-img {
+    width: 300px;
+    margin-left: 185px;
+}
+
+.zi-img img {
+    width: 100%;
+}
+
 .zi-teams {
     padding: 30px;
     background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
@@ -423,6 +432,10 @@ a {
     width: 100%;
 }
 
+.hr {
+    border-top: 2px solid #24252a;
+}
+
 hr {
     border-top: 2px solid #24252a;
 }
@@ -505,6 +518,7 @@ hr {
     .ycfl-matches h4 {
         text-align: center;
         color: #24252a;
+        margin-right: 60px;
         padding-bottom: 30px;
     }
     .ycfl-match {

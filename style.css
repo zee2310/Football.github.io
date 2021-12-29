@@ -1,3 +1,117 @@
+.top {
+    background-color: #24252a;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,34 +129,6 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.topnav .icon {
-    display: none;
 }
 
 
@@ -155,7 +241,7 @@ h4 {
 }
 
 .league .col-2 .ycfl-img {
-    width: 300px;
+    width: 260px;
     padding: 30px 0px;
 }
 
@@ -241,14 +327,8 @@ footer {
     background-color: #24252a;
 }
 
-footer h3 {
-    font-family: montserrat;
-    margin-top: 30px;
-    text-align: center;
-    color: #f2f2f2;
-}
-
-footer p {
+footer h3,
+p {
     font-family: montserrat;
     margin-top: 30px;
     text-align: center;
@@ -259,7 +339,7 @@ footer ul li {
     list-style: none;
     padding: 8px;
     align-items: center;
-    margin: 30px;
+    margin: 40px;
     display: inline-block;
 }
 
@@ -271,46 +351,84 @@ footer ul li {
 /*----------------------------- Footer end here--------------------------*/
 
 
-/*----------------------------- Media query for top nav start here----------------------------*/
+/*----------------------------- Table class Start here  end here----------------------------*/
 
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
+.ycfl-table {
+    text-align: center;
+    color: #f2f2f2;
+    background-color: #24252a;
 }
 
-@media screen and (max-width: 600px) {
-    header {
-        width: auto;
-    }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        left: 10;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .row {
-        width: 300px;
-        text-align: center;
-        justify-items: center;
-        justify-content: center;
-    }
+.ycfl-table h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ycfl-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ycfl-table table .table-left {
+    float: left;
+    text-align: left;
+}
+
+.ycfl-table table th,
+td {
+    text-align: center;
+    padding: 7px;
+}
+
+.ycfl-matches {
+    background: radial-gradient(rgb(189, 156, 156), #f8b8b8);
+    text-align: center;
+}
+
+.score {
+    font-size: 70px;
+}
+
+.ycfl-matches h4 {
+    text-align: center;
+    color: #24252a;
+    padding-bottom: 30px;
+}
+
+.ycfl-match {
+    display: inline-flex;
+    text-align: center;
+    align-content: center;
+}
+
+.ycfl-match h1 {
+    padding-top: 115px;
+}
+
+.team-img {
+    margin: 50px;
+    width: 200px;
+}
+
+.team-img p,
+a {
+    font-weight: 700;
+    color: #24252a;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.team-img img {
+    width: 100%;
+}
+
+hr {
+    border-top: 2px solid #24252a;
 }
 
 
-/*----------------------------- media query for top nav end here----------------------------*/
+/*----------------------------- Table class Start here end here----------------------------*/
 
 
 /*----------------------------- media query for header start here----------------------------*/
@@ -347,10 +465,9 @@ footer ul li {
         text-align: center;
         justify-content: space-around;
     }
-    .league .slogan .ycfl-img {
-        margin-left: 30px;
+    .league .col-2 .ycfl-img {
         width: 230px;
-        margin-bottom: 30px;
+        padding: 50px 0px;
     }
     .league .slogan .ycfl-img img {
         width: 100%;
@@ -381,6 +498,35 @@ footer ul li {
         margin-right: 15px;
         margin-left: 15px;
         display: inline-block;
+    }
+    .score {
+        font-size: 30px;
+    }
+    .ycfl-matches h4 {
+        text-align: center;
+        color: #24252a;
+        padding-bottom: 30px;
+    }
+    .ycfl-match {
+        display: inline-flex;
+        text-align: center;
+        align-content: center;
+    }
+    .ycfl-match h1 {
+        padding-top: 50px;
+    }
+    .team-img {
+        margin: 25px;
+        width: 100px;
+    }
+    .team-img p,
+    a {
+        text-decoration: none;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .team-img img {
+        width: 100%;
     }
 }
 

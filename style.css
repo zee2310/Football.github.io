@@ -187,7 +187,8 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    overflow: hidden;
 }
 
 .col-2 {
@@ -195,8 +196,7 @@ header {
     min-width: 500px;
     color: #f2f2f2;
     text-align: center;
-    justify-items: center;
-    justify-items: center;
+    justify-content: flex-start;
 }
 
 .col-2 img {
@@ -223,6 +223,8 @@ header {
 /*----------------------------- league class start here----------------------------*/
 
 .league {
+    width: 100%;
+    overflow: hidden;
     padding-top: 80px;
     padding-bottom: 80px;
     color: black;
@@ -465,8 +467,8 @@ hr {
         padding: 50px 0px;
     }
     .zi-img {
-        width: 150px;
-        margin-left: 50px;
+        width: 200px;
+        margin-left: 20px;
     }
     .ycfl-matches h4 {
         text-align: center;

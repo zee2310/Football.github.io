@@ -401,7 +401,7 @@ td {
 .ycfl-matches h4 {
     text-align: center;
     color: #24252a;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 
 .ycfl-match {
@@ -463,6 +463,15 @@ hr {
         max-width: 100%;
         margin-left: 30px;
         padding: 50px 0px;
+    }
+    .zi-img {
+        width: 150px;
+        margin-left: 50px;
+    }
+    .ycfl-matches h4 {
+        text-align: center;
+        color: #24252a;
+        padding-bottom: 5px;
     }
 }
 
@@ -584,6 +593,9 @@ hr {
     }
     footer ul {
         margin-left: 50px;
+    }
+    body {
+        width: 111%;
     }
 }
 
